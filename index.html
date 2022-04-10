@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ali Momen</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navbar">
+      <div>
+        <img
+          class="logo"
+          src="./assets/images/logo.PNG"
+          alt="Ali Momen - logo"
+        />
+      </div>
+      <ul class="nav-list" id="navi-list">
+        <li class="list-item"><a href="#about-me">About Me</a></li>
+        <li class="list-item"><a href="#work">Work</a></li>
+        <li class="list-item"><a href="#contact-me">Contact Me</a></li>
+      </ul>
+      <div class="menu" id="toggle-button">
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+        <div class="menu-line"></div>
+      </div>
+    </nav>
+
+    <div class="hero">
+      <h1 class="hero-text">Creative Coding</h1>
+    </div>
+
+    <section class="about-me" id="about-me">
+      <div class="about-header">
+        <h2>About Me</h2>
+      </div>
+      <div class="about-description">
+        <p>
+          Ali Momen is an artist, actor, activist and professional web
+          developer. With a background in the arts and communication, Ali knows
+          first hand how to make sure every interaction on the web is also a
+          feast for the eyes, and the heart.
+        </p>
+      </div>
+    </section>
+
+    <!-- WORK SECTION -->
+
+    <section class="work" id="work">
+      <div class="work-header">
+        <h2>Work</h2>
+      </div>
+      <div class="work-images">
+        <div class="main-app">
+          <a
+            href="https://wearther-a-squad.github.io/interactive-proj-wearther/"
+            target="_blank"
+          >
+            <img
+              class="image-1"
+              src="./assets/images/Wearther.png"
+              alt="an iPad with an app sitting on top of MacBook Pro"
+          /></a>
+        </div>
+        <div class="secondary-app">
+          <a href="https://www.nytimes.com" target="_blank">
+            <img
+              class="image-2"
+              src="./assets/images/Vanessa.jpg"
+              alt="a book of art with a woman in rich colour"
+          /></a>
+          <a href="https://www.apple.com" target="_blank"
+            ><img
+              class="image-3"
+              src="./assets/images/Nicola.jpg"
+              alt="a painting of a man's face with distorted colours"
+          /></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT ME SECTION -->
+
+    <section class="contact-me" id="contact-me">
+      <div class="contact-header">
+        <h2>Contact</h2>
+      </div>
+
+      <div class="contact-info">
+        <h3 class="contact-type">
+          <a href="mailto:ali@alimomen.com">Email</a>
+        </h3>
+        <h3 class="contact-type"><a href="tel:416-894-6710">Phone</a></h3>
+      </div>
+    </section>
+
+    <div class="footer"></div>
+    <p></p>
+  </body>
+  <script>
+    const toggleButton = document.getElementById("toggle-button");
+    const naviList = document.getElementById("navi-list");
+
+    toggleButton.addEventListener("click", () => {
+      naviList.classList.toggle("active");
+    });
+  </script>
+</html>
