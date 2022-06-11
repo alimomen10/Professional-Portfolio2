@@ -1,111 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ali Momen</title>
-    <link rel="stylesheet" href="css/normalize.css" />
-    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/styles.css" />
   </head>
   <body>
-    <!-- NAVIGATION -->
-    <nav class="navbar">
-      <div>
-        <img
-          class="logo"
-          src="./assets/images/logo.PNG"
-          alt="Ali Momen - logo"
-        />
-      </div>
-      <ul class="nav-list" id="navi-list">
-        <li class="list-item"><a href="#about-me">About Me</a></li>
-        <li class="list-item"><a href="#work">Work</a></li>
-        <li class="list-item"><a href="#contact-me">Contact Me</a></li>
-      </ul>
-      <div class="menu" id="toggle-button">
-        <div class="menu-line"></div>
-        <div class="menu-line"></div>
-        <div class="menu-line"></div>
-      </div>
-    </nav>
+    <!-- NAVBAR -->
+    <header>
+      <nav class="navbar bg-light">
+        <div class="container-fluid">
+          <span class="navbar-brand mb-0 h1">Ali Momen</span>
+          <div class="d-flex">
+            <p class="me-4">Bio</p>
+            <p class="me-4">Projects</p>
+            <p>Contact</p>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- NAVBAR END -->
 
-    <div class="hero">
-      <h1 class="hero-text">Creative Coding</h1>
+    <!-- HERO -->
+    <div class="hero d-flex justify-content-center mt-5 bg-primary text-white">
+      <div class="align-content-center">
+        <h1>Ali Momen</h1>
+        <div class="subheading d-flex justify-content-center">
+          <h3>The Creative Code</h3>
+        </div>
+      </div>
+    </div>
+    <!-- END HERO -->
+
+    <!-- BIO -->
+    <div class="container-fluid d-flex mt-5">
+      <h5>
+        Ali Momen is an artist, creative, and full-stack web developer. With a
+        succesful career in the arts, and a now blossoming career in web
+        developement, Ali can fuse creativity and technology in every endeavour.
+      </h5>
+    </div>
+    <!-- END BIO -->
+
+    <div class="container-fluid d-flex mt-5">
+      <h2>Projects</h2>
+    </div>
+    <div class="container-fluid d-flex mt-2">
+      <div class="card" style="width: 18rem">
+        <img
+          src="https://images.unsplash.com/photo-1556983703-27576e5afa24?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2547&q=80"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h4>Wearther</h4>
+          <p class="card-text">
+            Get the weather and know exactly what to wear!
+          </p>
+        </div>
+      </div>
+      <div class="card ms-2" style="width: 18rem">
+        <img
+          src="https://images.unsplash.com/photo-1473186505569-9c61870c11f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2670&q=80"
+          class="card-img-top"
+          alt="..."
+        />
+        <div class="card-body">
+          <h4>Fermata</h4>
+          <p class="card-text">
+            Send a beautiful digital letter with a soundtrack to accompany it.
+          </p>
+        </div>
+      </div>
     </div>
 
-    <section class="about-me" id="about-me">
-      <div class="about-header">
-        <h2>About Me</h2>
-      </div>
-      <div class="about-description">
-        <p>
-          Ali Momen is an artist, actor, activist and professional web
-          developer. With a background in the arts and communication, Ali knows
-          first hand how to make sure every interaction on the web is also a
-          feast for the eyes, and the heart.
-        </p>
-      </div>
-    </section>
-
-    <!-- WORK SECTION -->
-
-    <section class="work" id="work">
-      <div class="work-header">
-        <h2>Work</h2>
-      </div>
-      <div class="work-images">
-        <div class="main-app">
-          <a
-            href="https://wearther-a-squad.github.io/interactive-proj-wearther/"
-            target="_blank"
-          >
-            <img
-              class="image-1"
-              src="./assets/images/Wearther.png"
-              alt="an iPad with an app sitting on top of MacBook Pro"
-          /></a>
-        </div>
-        <div class="secondary-app">
-          <a href="https://www.nytimes.com" target="_blank">
-            <img
-              class="image-2"
-              src="./assets/images/Vanessa.jpg"
-              alt="a book of art with a woman in rich colour"
-          /></a>
-          <a href="https://www.apple.com" target="_blank"
-            ><img
-              class="image-3"
-              src="./assets/images/Nicola.jpg"
-              alt="a painting of a man's face with distorted colours"
-          /></a>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT ME SECTION -->
-
-    <section class="contact-me" id="contact-me">
-      <div class="contact-header">
+    <!-- CONTACT -->
+    <div class="container-fluid d-flex mt-5">
+      <div>
         <h2>Contact</h2>
       </div>
+    </div>
+    <div class="container-fluid d-flex mt-2">
+      <h5>
+        Phone:
+        <h5 class="ms-5">416-894-6710</h5>
+      </h5>
+    </div>
+    <div class="container-fluid d-flex mt-2">
+      <h5>
+        Email:
+        <h5 class="ms-5">ali@alimomen.com</h5>
+      </h5>
+    </div>
 
-      <div class="contact-info">
-        <h3 class="contact-type">
-          <a href="mailto:ali@alimomen.com">Email</a>
-        </h3>
-        <h3 class="contact-type"><a href="tel:416-894-6710">Phone</a></h3>
-      </div>
-    </section>
-
-    <div class="footer"></div>
-    <p></p>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
   </body>
-  <script>
-    const toggleButton = document.getElementById("toggle-button");
-    const naviList = document.getElementById("navi-list");
-
-    toggleButton.addEventListener("click", () => {
-      naviList.classList.toggle("active");
-    });
-  </script>
 </html>
